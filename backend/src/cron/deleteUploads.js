@@ -21,14 +21,15 @@ cron.schedule("* * * * *", () => {
 
         const fileAge = Date.now() - stats.mtimeMs;
 
-        if (fileAge > 5 * 60 * 1000) {
-          fs.unlink(filePath);
+        // delete files older than 1 minute
+        if (fileAge > 1 * 60 * 1000) {
+          fs.unlinkSync(filePath);
           console.log("Deleted:", file);
         }
-      } catch (error) {
-        console.log("Error processing file:", file, err);
-      }
 
+      } catch (error) {
+        console.log("Error processing file:", file, error);
+      }
     }
   });
 });

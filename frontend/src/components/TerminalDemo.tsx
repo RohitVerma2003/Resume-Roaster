@@ -13,9 +13,9 @@ const TerminalDemo: React.FC = () => {
     { text: "Scanning document structure...", delay: 800, color: "#666" },
     { text: "Running ATS compatibility checks...", delay: 1600, color: "#666" },
     { text: "ATS Score: 54/100 ⚠️", delay: 2400, color: "#FFB800" },
-    { text: "─────────────────────────────", delay: 3000, color: "#1a3a1a" },
+    { text: "───────────────────────", delay: 3000, color: "#1a3a1a" },
     { text: "🔥 RESUME ROAST INITIATED", delay: 3400, color: "#FF4444" },
-    { text: "─────────────────────────────", delay: 3800, color: "#1a3a1a" },
+    { text: "───────────────────────", delay: 3800, color: "#1a3a1a" },
     { text: '▸ "Passionate developer" detected.', delay: 4200, color: "#00FF9C" },
     { text: "  Every fresher says this. Try harder.", delay: 4200, color: "#888" },
     { text: '▸ Weather App project found.', delay: 5000, color: "#00FF9C" },
@@ -23,7 +23,7 @@ const TerminalDemo: React.FC = () => {
     { text: '▸ No measurable achievements found.', delay: 5800, color: "#00FF9C" },
     { text: "  Recruiters love numbers. Give them.", delay: 5800, color: "#888" },
     { text: '▸ 3-page resume detected. Cut to 1.', delay: 6600, color: "#FF4444" },
-    { text: "─────────────────────────────", delay: 7200, color: "#1a3a1a" },
+    { text: "────────────────────────", delay: 7200, color: "#1a3a1a" },
     { text: "✓ Generating improvements...", delay: 7600, color: "#00FF9C" },
   ];
   
