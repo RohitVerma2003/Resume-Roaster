@@ -2,7 +2,6 @@ import { useState, useCallback } from "react";
 import type { RoastData } from "../types";
 import { api } from "../services/api";
 import toast from "react-hot-toast";
-import { AxiosError } from "axios";
 
 interface UseResumeRoastReturn {
   uploadResume: (file: File) => Promise<void>;

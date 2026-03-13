@@ -34,7 +34,7 @@ const MatrixRain: React.FC = () => {
       });
     };
     
-    const interval = setInterval(draw, 50);
+    const interval = setInterval(draw, 100);
     
     const handleResize = () => {
       canvas.width = window.innerWidth;
