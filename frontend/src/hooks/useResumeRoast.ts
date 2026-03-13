@@ -6,7 +6,7 @@ import toast from "react-hot-toast";
 interface UseResumeRoastReturn {
   uploadResume: (file: File) => Promise<void>;
   loading: boolean;
-  error: string | null;
+  error: any;
   roastData: RoastData | null;
   uploadProgress: number;
   reset: () => void;
@@ -14,7 +14,7 @@ interface UseResumeRoastReturn {
 
 export const useResumeRoast = (): UseResumeRoastReturn => {
   const [loading, setLoading] = useState<boolean>(false);
-  const [error, setError] = useState<string | null>(null);
+  const [error, setError] = useState<any>(null);
   const [roastData, setRoastData] = useState<RoastData | null>(null);
   const [uploadProgress, setUploadProgress] = useState<number>(0);
 
