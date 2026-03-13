@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import LandingPage from "./pages/LandingPage";
 import DemoPage from "./pages/DemoPage";
-import { Analytics } from "@vercel/analytics/next";
+import { Analytics } from "@vercel/analytics/react";
 import "./App.css";
 
 const App = () => {
