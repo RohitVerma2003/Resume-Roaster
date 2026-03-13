@@ -13,7 +13,8 @@ const limiter = rateLimit({
 const app = express();
 
 app.use(cors({
-    origin: ["http://localhost:5173" , "http://localhost:4173"],
+    // origin: ["http://localhost:5173" , "http://localhost:4173"],
+    origin: ["https://resume-roaster-alpha.vercel.app"],
     credentials: true
 }))
 
