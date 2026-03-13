@@ -330,6 +330,10 @@ const LandingPage: React.FC = () => {
         <div className="flex gap-6 flex-wrap">
           {[
             {
+              name: "Rohit",
+              link: "https://www.rohiit.in/",
+            },
+            {
               name: "GitHub",
               link: "https://github.com/RohitVerma2003",
             },

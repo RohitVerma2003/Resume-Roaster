@@ -72,7 +72,6 @@ ${resumeText}
         });
 
         let aiResponse = response.choices[0].message.content;
-        console.log(aiResponse);
 
         aiResponse = aiResponse
             .replace(/```json/g, "")

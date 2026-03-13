@@ -34,9 +34,9 @@ export const useResumeRoast = (): UseResumeRoastReturn => {
       }
     } catch (err: any) {
       const message =
-        err?.response?.data?.error ||
+        err?.response?.data?.error || typeof(err?.response?.data) ? err?.response?.data :
         "Error in roasting or may be credits limit exceeded";
-
+        
       toast.error(message);
       setError(err instanceof Error ? err.message : "Upload failed");
     } finally {
